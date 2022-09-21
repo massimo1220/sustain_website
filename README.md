@@ -30,6 +30,9 @@ We use Slack to discuss our changes and to talk about community issues, as well 
 
 If you need help with using GitHub in order to open an issue, sign up for an account, come back to this page, and open an issue by [clicking here](https://github.com/sustainers/website/issues/new). Ping one of us on Slack if you need help.
 
+
+
+
 ### Blog posts
 
 To create a new post:
