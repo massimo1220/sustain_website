@@ -1,0 +1,76 @@
+.navbar {
+    border-bottom: 1px solid lighten($darkblue, 10%);
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: $teal;
+
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+        }
+
+        .active > .nav-link,
+        .nav-link.active,
+        &.nav-link.show,
+        .show > .nav-link {
+            color: $white;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .nav-link::after,
+        .active > .nav-link::after {
+            background-color: $white;
+            content: "";
+            display: block;
+            margin-top: 4px;
+            transition: width 0.2s ease;
+            width: 0;
+            height: 1px;
+        }
+
+        .nav-link:hover::after,
+        .nav-link:focus::after,
+        .active > .nav-link::after {
+            width: 100%;
+        }
+    }
+
+    .navbar-brand {
+        color: $teal;
+
+        @media (min-width: 992px) {
+            -ms-flex: 0 1 100%;
+            margin: 0 5.5rem;
+        }
+    }
+
+    .navbar-logo {
+        transition: -webkit-transform 0.4s ease;
+        transition: transform 0.4s ease;
+        transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+        width: 124px;
+        height: 55px;
+        max-width: none;
+
+        &:hover {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+    }
+
+    .navbar-toggler {
+        border-color: currentcolor;
+        color: $teal;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
+    }
+}

@@ -1,0 +1,13 @@
+baguetteBox:
+  css:          "/assets/css/vendor/baguetteBox.min.css"
+  js:           "/assets/js/vendor/baguetteBox.min.js"
+cookieConsent:
+  css:          "/assets/css/vendor/cookieconsent.min.css"
+  js:           "/assets/js/vendor/cookieconsent.min.js"
+jquery:
+  url:          "/assets/js/vendor/jquery.slim.min.js"
+bootstrap:
+  css:
+    url:        "/assets/css/vendor/bootstrap.min.css"
+  js:
+    url:        "/assets/js/vendor/bootstrap.bundle.min.js"

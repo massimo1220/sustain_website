@@ -1,0 +1,38 @@
+.footer {
+    color: $white;
+    font-size: 0.9rem;
+
+    li + li {
+        margin: 0.5rem auto;
+    }
+
+    a {
+        color: inherit;
+
+        &:hover {
+            color: $teal;
+        }
+    }
+
+    .footer-bottom {
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    .social-list {
+        svg {
+            width: 20px;
+            height: 20px;
+
+            @media (min-width: 576px) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .definition {
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,22 @@
+.bg-black {
+    background-color: $black;
+}
+
+.bg-dark {
+    background-color: $dark;
+}
+
+.bg-teal {
+    background-color: $teal;
+}
+
+.bg-darkblue {
+    background-color: $darkblue;
+
+    .text-teal {
+        &:focus,
+        &:hover {
+            color: darken($teal, 20%);
+        }
+    }
+}

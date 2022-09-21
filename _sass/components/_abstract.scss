@@ -1,0 +1,26 @@
+html {
+    scroll-behavior: smooth;
+
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+}
+
+iframe {
+    border: none;
+}
+
+.text-decoration-none {
+    // stylelint-disable-next-line declaration-no-important
+    text-decoration: none !important;
+}
+
+.text-prewrap {
+    // stylelint-disable-next-line declaration-no-important
+    white-space: pre-wrap !important;
+}
+
+@mixin form_placeholder {
+    color: $white;
+    text-align: center;
+}

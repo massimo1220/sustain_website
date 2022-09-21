@@ -1,0 +1,72 @@
+title:              "A Space for Open Source Sustainers"
+short_title:        "SustainOSS"
+description:        "A Space for Open Source Sustainers" #todo fix DRY & SEO
+
+markdown:           kramdown
+
+source:             "."
+destination:        ./_site/
+
+encoding:           "utf-8"
+strict_front_matter: true
+
+liquid:
+  error_mode:       warn
+  strict_filters:   false
+  strict_variables: false
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style:            compressed
+
+# server
+baseurl:            ""
+port:               8000
+host:               "127.0.0.1"
+url:                "https://sustainoss.org"
+
+exclude:
+  - .sass-cache/
+  - node_modules/
+  - scripts/
+  - vendor/
+  - summit/
+  - _svgo.config.js
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - netlify.toml
+  - package.json
+  - package-lock.json
+  - README.md
+
+params:
+  github:           "https://github.com/sustainers"
+  slack:            "https://slack.opencollective.org"
+  twitter:          "https://twitter.com/SustainOSS"
+  discourse:        "https://discourse.sustainoss.org"
+
+# Social-related stuff
+author:
+  twitter:          "SustainOSS"
+
+twitter:
+  card:             "summary_large_image"
+  username:         "SustainOSS"
+
+logo:               "/assets/img/og-large.png"
+
+# Output
+permalink:          pretty
+defaults:
+  - scope:
+      path:         ""
+    values:
+      image:
+        path:       "/assets/img/og-large.png" # default image
+        width:      512
+        height:     256

@@ -1,0 +1,36 @@
+.newsletter-cta {
+    background-color: $teal-dark-wcag;
+    color: $white;
+
+    .form-control {
+        border: none;
+        border-bottom: 2px solid $dark;
+        border-radius: 0;
+
+        // no autoprefixer on GitHub pages thus this monstrosity...
+        &::-webkit-input-placeholder {
+            @include form_placeholder();
+        }
+
+        &::-moz-placeholder {
+            @include form_placeholder();
+        }
+
+        &::-ms-input-placeholder {
+            @include form_placeholder();
+        }
+
+        &:-ms-input-placeholder {
+            @include form_placeholder();
+        }
+
+        &::placeholder {
+            @include form_placeholder();
+        }
+
+        &:focus {
+            border-bottom: 2px solid transparent;
+            box-shadow: 0 0 0 0.2rem rgba($darkblue, 0.4);
+        }
+    }
+}
